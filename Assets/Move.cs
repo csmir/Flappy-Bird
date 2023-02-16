@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    /// <summary>
+    ///     Movement speed of the bird.
+    /// </summary>
     public float Speed;
 
-    // Update is called once per frame
+    /// <summary>
+    ///     Set the bird's speed.
+    /// </summary>
     void Update()
     {
+        // Apply speed to the bird.
         transform.position += Speed * Time.deltaTime * Vector3.left;
     }
 }

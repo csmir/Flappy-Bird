@@ -5,18 +5,28 @@ using UnityEngine;
 
 public class BirdFlight : MonoBehaviour
 {
+    /// <summary>
+    ///     A reference to the game manager.
+    /// </summary>
     public GameManager GameManager;
 
+    /// <summary>
+    ///     The velocity of jumps.
+    /// </summary>
     public float Velocity = 0;
+
+    // A reference to the bird.
     private Rigidbody2D _rb;
 
-    // Start is called before the first frame update
     void Start()
     {
+        // Set the bird reference.
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    /// <summary>
+    ///     Apply the velocity when an input triggers jumps.
+    /// </summary>
     void Update()
     {
         Debug.Log(Time.timeScale);
@@ -27,6 +37,10 @@ public class BirdFlight : MonoBehaviour
         }
     }
 
+    /// <summary>
+    ///     Reset the game when the bird hits collision.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameManager.GameOver();
