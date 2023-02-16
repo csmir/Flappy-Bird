@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 1f;
+        
     }
 
     public void GameOver()
@@ -21,5 +21,6 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
+        Time.timeScale = 1f;
     }
 }

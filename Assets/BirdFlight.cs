@@ -19,6 +19,8 @@ public class BirdFlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Time.timeScale);
+
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             _rb.velocity = (Vector2.up * Velocity);

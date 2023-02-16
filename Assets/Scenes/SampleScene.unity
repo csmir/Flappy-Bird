@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 1179894675}
-  Velocity: 0.8
+  Velocity: 1.1
 --- !u!70 &613313168
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
