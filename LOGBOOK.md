@@ -3,7 +3,7 @@
 ## The initial setup
 
 A license has been created for development independence. 
-I do not own rights to this game, so it is important to properly license it as non owned. MIT has been added.
+I do not own rights to this game, so it is important to properly license it as non owned. GNUv3 has been added.
 
 ## Assets
 
